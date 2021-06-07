@@ -37,6 +37,7 @@ h3 {
   width: 85%;
 	max-width: 850px;
   text-align: justify;
+  padding-left: 15px;
 }
 
 header, .summary {
