@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Josefin+Sans&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
 
-*{
-  
-  color: #EBF5EE;
-}
+
 
 body {
   background-color: #283044;
   font-family: "Open Sans";
   font-size: 16px;
+  width: 100%;
+  margin: 0px;
+  color: #EBF5EE;
 }
 
 h2, h3 {
@@ -18,19 +18,38 @@ h2, h3 {
 
 h1 {
   font-family: "Josefin Sans";
-  font-size: 3em;
+  font-size: 5em;
   color: #15af7c;
 }
 
 h2 {
   font-style: italic;
+  font-size: 2em;
+  margin-top: -70px;
+  text-align: center;
+}
+
+h3 {
   font-size: 1.3em;
 }
 
-header, p {
-  width: 65%;
+.preamble p, .main p {
+  width: 85%;
 	max-width: 850px;
   text-align: justify;
+}
+
+header, .summary {
+  width: 90%;
+  background-color: #1c2230;
+}
+
+.summary {
+  line-height: 50%;
+  color: #ebf5ee85;
+  margin-top: -20px;
+  font-size: .9em;
+  text-align: end;
 }
 
 
@@ -52,6 +71,7 @@ ul {
   background-color: #bfa89e31;
 }
 
+
 .intro, .main {
   display: flex;
   flex-direction: column;
@@ -65,7 +85,7 @@ ul {
 aside.sidebar {
 	position: absolute;
 	left: 1%;
-	top: 350px;
+	top: 300px;
 	padding: 10px 30px;
 }
 
