@@ -27,7 +27,7 @@ h2 {
   font-size: 1.3em;
 }
 
-p {
+header, p {
   width: 65%;
 	max-width: 850px;
   text-align: justify;
@@ -58,10 +58,14 @@ ul {
   align-items: flex-end;
 }
 
+.sidebar ul {
+  padding: 0px;
+}
+
 aside.sidebar {
 	position: absolute;
 	left: 1%;
-	top: 150px;
+	top: 350px;
 	padding: 10px 30px;
 }
 
