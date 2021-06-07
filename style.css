@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
 
+*{
+  
+  color: #EBF5EE;
+}
+
 body {
+  background-color: #283044;
   font-family: "Open Sans";
   font-size: 16px;
-  text-align: center;
 }
 
 h1, h2, h3 {
   font-family: "Ubuntu";
+  color: #78a1bb;
+  
 }
 
 h1 {
@@ -19,10 +26,45 @@ h2 {
   font-size: 1.3em;
 }
 
-abbr {
-  text-decoration: none;
+p {
+  width: 65%;
+	max-width: 850px;
+  text-align: justify;
 }
 
-.sidebar > ul {
-  text-align: left;
+
+abbr {
+  text-decoration: none;
+  color: #bfa89e;
 }
+
+a {
+  text-decoration: none;
+  color: #C1666B;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.preamble {
+  background-color: #bfa89e31;
+}
+
+.intro, .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+aside.sidebar {
+	position: absolute;
+	left: 1%;
+	top: 150px;
+	padding: 10px 30px;
+}
+
+header, .page-wrapper > div, .page-wrapper section > div {
+	padding: 10px 30px 10px 80px;
+}
+
