@@ -4,6 +4,7 @@
 
 body {
   background-color: #283044;
+  background-image: url(https://i.stack.imgur.com/IehB7.png);
   font-family: "Open Sans";
   font-size: 16px;
   width: 100%;
@@ -42,17 +43,15 @@ h3 {
 
 header, .summary {
   width: 90%;
-  background-color: #1c2230;
+  background-color: #1c2230a6;
 }
 
 .summary {
   line-height: 50%;
   color: #ebf5ee85;
-  margin-top: -20px;
   font-size: .9em;
   text-align: end;
 }
-
 
 abbr {
   text-decoration: none;
@@ -71,7 +70,6 @@ ul {
 .preamble {
   background-color: #bfa89e31;
 }
-
 
 .intro, .main {
   display: flex;
