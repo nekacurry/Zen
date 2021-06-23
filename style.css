@@ -7,9 +7,9 @@ body {
   background-image: url(https://i.stack.imgur.com/IehB7.png);
   font-family: "Open Sans";
   font-size: 16px;
-  width: 100%;
-  margin: 0px;
+  margin: 0 0 50px 0;
   color: #EBF5EE;
+  width: 100%;
 }
 
 h2, h3 {
@@ -130,6 +130,29 @@ a.designer-name {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.design-selection {
+footer > a {
+	border: 1px solid #1c2130;
+	padding: 10px;
+	margin: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.317);
+  background-color: #1c2230a6;
+}
 
+footer {
+  align-self: flex-start;
+}
+
+.design-archives, .zen-resources {
+  background-color: #bfa89e31;
+  margin: auto auto 10px -100px;
+  padding-left:105px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+
+.requirements {
+  background-color: #bfa89e31;
+  margin-right: -30px;
+  padding-right: 100px;
+  padding-left: 60px;
 }
