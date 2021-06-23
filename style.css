@@ -112,8 +112,13 @@ header, .page-wrapper > div, .page-wrapper section > div {
   background-color: #1c2230a6;
   text-align: center;
   cursor: pointer;
+  font-size: 0.5rem;
 }
 
+.design-selection ul > li > *:first-child{
+  font-size: 2em;
+  font-family: "Ubuntu";
+}
 
 a.designer-name {
   display: flex;
@@ -123,4 +128,8 @@ a.designer-name {
 .design-selection ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.design-selection {
+
 }
