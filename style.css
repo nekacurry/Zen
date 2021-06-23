@@ -41,26 +41,29 @@ h3 {
   padding-left: 15px;
 }
 
-header, .summary {
-  width: 90%;
-  background-color: #1c2230a6;
+.preamble, .main {
+  grid-area: m;
 }
 
 .summary {
-  line-height: 50%;
   color: #ebf5ee85;
   font-size: .9em;
   text-align: end;
+  grid-area: l;
 }
 
 .summary a {
-  display: inline-block;
-  padding: 0.5em 1em;
+  font-size: 10px;
+  padding: 0.75em 1em;
   margin: 0.5em;
-  border: 3px solid #bd8285;
-  color: #C1666B;
+  background-color: #bd8285;
+  color: #EBF5EE;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.summary a:hover{
+  background-color: #9b696b;
 }
 
 abbr {
@@ -79,12 +82,25 @@ ul {
 
 .preamble {
   background-color: #bfa89e31;
+  grid-area: b;
 }
 
-.intro, .main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+header, .summary {
+  background-color: #1c2230a6;
+}
+
+.intro {
+  grid-area: h;
+  display: grid;
+  grid-template-areas: 
+  "t t t"
+  "l l l"
+  ". . b"
+  ;
+}
+
+header {
+  grid-area: t;
 }
 
 .sidebar ul {
@@ -92,10 +108,7 @@ ul {
 }
 
 aside.sidebar {
-	position: absolute;
-	left: 1%;
-	top: 400px;
-	padding: 10px 30px;
+	grid-area: s;
 }
 
 header, .page-wrapper > div, .page-wrapper section > div {
@@ -139,7 +152,7 @@ footer > a {
 }
 
 footer {
-  align-self: flex-start;
+  grid-area: f;
 }
 
 .design-archives, .zen-resources {
@@ -153,6 +166,15 @@ footer {
 .requirements {
   background-color: #bfa89e31;
   margin-right: -30px;
-  padding-right: 100px;
-  padding-left: 60px;
+  margin-left: -30px;
+  padding-left: 30px;
+}
+
+.page-wrapper {
+  display: grid;
+  margin: 0 0px 0 50px;
+  grid-template-areas: 
+  "h h h"
+  "s m m"
+  "f f f";
 }
